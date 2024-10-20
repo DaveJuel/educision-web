@@ -21,7 +21,6 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
@@ -45,6 +44,7 @@ import Carousel from "./IndexSections/Carousel.js";
 import Icons from "./IndexSections/Icons.js";
 import Login from "./IndexSections/Login.js";
 import Download from "./IndexSections/Download.js";
+import AppNavbar from "components/Navbars/AppNavbar.js";
 
 class Index extends React.Component {
   componentDidMount() {
@@ -55,7 +55,7 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <AppNavbar />
         <main ref="main">
           <Hero />
           <Buttons />
