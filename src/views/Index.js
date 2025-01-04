@@ -3,12 +3,12 @@ import React from "react";
 import AppNavbar from "components/Navbars/AppNavbar.js";
 import AppHero from "./IndexSections/AppHero.js";
 import AppFooter from "components/Footers/AppFooter.js";
-// import AppWhatWeOffer from "./IndexSections/AppWhatWeOffer.js";
-// import AppOurTools from "./IndexSections/AppOurTools.js";
-// import AppHowItWorks from "./IndexSections/AppHowItWorks.js";
-// import AppAboutUs from "./IndexSections/AppAboutUs.js";
-// import AppNewsletter from "./IndexSections/AppNewsletter.js";
-// import AppContactUs from "./IndexSections/AppContactUs.js";
+import AppWhatWeOffer from "./IndexSections/AppWhatWeOffer.js";
+import AppOurTools from "./IndexSections/AppOurTools.js";
+import AppHowItWorks from "./IndexSections/AppHowItWorks.js";
+import AppAboutUs from "./IndexSections/AppAboutUs.js";
+import AppNewsletter from "./IndexSections/AppNewsletter.js";
+import AppContactUs from "./IndexSections/AppContactUs.js";
 
 class Reference extends React.Component {
 //   componentDidMount() {
@@ -22,12 +22,12 @@ class Reference extends React.Component {
         <AppNavbar />
         <main ref="main">
           <AppHero />
-          {/* <AppWhatWeOffer/>
+          <AppWhatWeOffer/>
           <AppOurTools />
           <AppHowItWorks />
           <AppAboutUs />
           <AppNewsletter />
-          <AppContactUs /> */}
+          <AppContactUs />
         </main>
         <AppFooter />
       </>
