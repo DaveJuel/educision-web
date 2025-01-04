@@ -30,7 +30,7 @@ const AppContactUs = () => {
           <h3 style={{ marginTop: "30px", marginBottom: "10px" }}>Get Social</h3>
           <div style={{ display: "flex", gap: "15px" }}>
             <a
-              href="#"
+              href="/"
               style={{
                 display: "flex",
                 alignItems: "center",
@@ -49,7 +49,7 @@ const AppContactUs = () => {
                   </span>
             </a>
             <a
-              href="#"
+              href="/"
               style={{
                 display: "flex",
                 alignItems: "center",
