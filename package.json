@@ -1,7 +1,7 @@
 {
-  "name": "argon-design-system-react",
+  "name": "shakishuli",
   "version": "1.1.2",
-  "description": "React version of Argon Design System by Creative Tim",
+  "description": "Helps you find the school of your like.",
   "main": "index.js",
   "repository": {
     "type": "git",

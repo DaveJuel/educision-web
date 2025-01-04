@@ -3,10 +3,6 @@ import { Link } from "react-router-dom";
 import {
   Button,
   UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
-  DropdownToggle,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -82,7 +78,12 @@ class AppNavbar extends React.Component {
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
                     <NavLink className="text-primary" href="/advanced-search">
-                      Advanced Search
+                      Home
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="text-primary" href="/advanced-search">
+                      Solutions
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -90,24 +91,20 @@ class AppNavbar extends React.Component {
                       Schools
                     </NavLink>
                   </NavItem>
-                  <UncontrolledDropdown nav inNavbar>
-                    <DropdownToggle className="text-primary" nav caret>
-                      Search by District
-                    </DropdownToggle>
-                    <DropdownMenu right>
-                      <DropdownItem href="/district-1">District 1</DropdownItem>
-                      <DropdownItem href="/district-2">District 2</DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
                   <NavItem>
-                    <NavLink className="text-primary" href="/maps">
-                      Maps
+                    <NavLink className="text-primary" href="/schools">
+                      How it works
                     </NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink className="text-primary" href="/login">
-                      Login
+                    <NavLink className="text-primary" href="/schools">
+                      About
                     </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <Button className="btn btn-neutral" href="/register">
+                      Login
+                    </Button>
                   </NavItem>
                   <NavItem>
                     <Button className="btn btn-primary" href="/register">

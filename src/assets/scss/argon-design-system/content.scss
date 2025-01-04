@@ -1,0 +1,17 @@
+.section-our-tools {
+    padding: 60px 0;
+  }
+  
+  .section-our-tools h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  

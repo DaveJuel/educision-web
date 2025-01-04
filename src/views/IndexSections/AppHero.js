@@ -1,7 +1,5 @@
 import React from "react";
-
-// reactstrap components
-import { Button, Container, Row, Col, Input, FormGroup, InputGroup, InputGroupAddon, InputGroupText } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 class AppHero extends React.Component {
   render() {
@@ -9,74 +7,49 @@ class AppHero extends React.Component {
       <>
         <div className="position-relative">
           <section className="section section-hero section-shaped">
+            {/* Background Shape */}
             <div className="shape shape-style-1 bg-gradient-secondary">
-              <span className="span-150" />
-              <span className="span-50" />
-              <span className="span-50" />
-              <span className="span-75" />
-              <span className="span-100" />
-              <span className="span-75" />
-              <span className="span-50" />
-              <span className="span-100" />
-              <span className="span-50" />
-              <span className="span-100" />
+              <img
+                alt="Background"
+                style={{ width: "100%" }}
+                src={require("assets/img/theme/herobg.png")}
+              />
             </div>
-            <Container className="shape-container d-flex align-items-center py-lg">
-              <div className="col px-0">
-                <Row className="align-items-center justify-content-center">
-                  <Col className="text-center" lg="6">
-                    <h3 className="mb-0">YOUR ONE STOP HUB FOR</h3>
-                    <h2 className="mb-0">ALL SCHOOLS IN RWANDA</h2>
-                    <p className="lead text-primary">
-                    Getting the right school is a critical decision We make it easy to find and apply to the perfect one.
-                    </p>
-                    <Col md="12">
-                      <FormGroup >
-                        <InputGroup className="mb-4">
-                          <InputGroupAddon addonType="prepend">
-                            <InputGroupText>
-                              <i className="ni ni-zoom-split-in" />
-                            </InputGroupText>
-                          </InputGroupAddon>
-                          <Input placeholder="Search" type="text" />
-                        </InputGroup>
-                      </FormGroup>
-                    </Col>
-                    <div className="btn-wrapper mt-3">
-                      <Button
-                        className="btn-default btn-icon mb-3 mb-sm-0"
-                        color="default"
-                        size="sm"
-                      >
-                        <span className="btn-inner--text">Kindergarten</span>
-                      </Button>
-                      <Button
-                        className="btn-default btn-icon mb-3 mb-sm-0"
-                        color="default"
-                        size="sm"
-                      >
-                        <span className="btn-inner--text">Primary</span>
-                      </Button>
-                      <Button
-                        className="btn-default btn-icon mb-3 mb-sm-0"
-                        color="default"
-                        size="sm"
-                      >
-                        <span className="btn-inner--text">Secondary</span>
-                      </Button>
-                      <Button
-                        className="btn-default btn-icon mb-3 mb-sm-0"
-                        color="default"
-                        size="sm"
-                      >
-                        <span className="btn-inner--text">University</span>
-                      </Button>
-                    </div>
-                  </Col>
-                </Row>
-              </div>
+            <Container className="d-flex align-items-left py-lg">
+              <Row className="align-items-left justify-content-left">
+                {/* Hero Text and Buttons */}
+                <Col lg="6" className="text-left">
+                  <h1 className="display-4 text-dark font-weight-bold"
+                     style={{ fontSize: "3.5rem", lineHeight: "1.2" }}>
+                    Easing Education Search For ALL
+                  </h1>
+                  <div className="btn-wrapper mt-4">
+                    <Button
+                      color="primary"
+                      size="lg"
+                      className="mb-3 w-100 text-left"
+                    >
+                      I am a parent looking for a school for my child
+                    </Button>
+                    <Button
+                      color="primary"
+                      size="lg"
+                      className="mb-3 w-100 text-left"
+                    >
+                      I am a student looking for what to study
+                    </Button>
+                    <Button
+                      color="primary"
+                      size="lg"
+                      className="mb-3 w-100 text-left"
+                    >
+                      I work at an educational institution
+                    </Button>
+                  </div>
+                </Col>
+              </Row>
             </Container>
-            {/* SVG separator */}
+            {/* Bottom Separator */}
             <div className="separator separator-bottom separator-skew zindex-100">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
